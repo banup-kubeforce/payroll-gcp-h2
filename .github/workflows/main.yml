@@ -26,7 +26,9 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v0'
 
       - name: 'Use gcloud CLI'
-        run: 'gcloud functions deploy payroll-gcp --entry-point org.springframework.cloud.function.adapter.gcp.GcfJarLauncher --runtime java11 --trigger-http --source target/deploy --memory 512MB
+        run: 'gcloud functions deploy payroll-gcp --entry-point org.springframework.cloud.function.adapter.gcp.GcfJarLauncher --runtime java11 --trigger-http --source target/deploy --memory 512MB'
+
+
   #    - id: 'deploy'
   #      uses: 'google-github-actions/deploy-cloud-functions@v0'
   #      with:
