@@ -1,5 +1,6 @@
 package com.kubeforce.payrollgcp;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.function.context.FunctionalSpringApplication;
@@ -9,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 public class PayrollGcpApplication {
 
     public static void main(String[] args) {
-        FunctionalSpringApplication.run(PayrollGcpApplication.class, args);
+        SpringApplication.run(PayrollGcpApplication.class, args);
     }
     @Bean
     public EmployeeFunction exampleFunction() {
@@ -22,7 +23,7 @@ public class PayrollGcpApplication {
     }
 
     @Bean
-    public EmployeeSupplier exampleSupplier() {
+    public EmployeeSupplier empSupplier1() {
         return new EmployeeSupplier();
     }
 }
