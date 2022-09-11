@@ -12,7 +12,7 @@ public class PayrollGcpApplication {
     public static void main(String[] args) {
         SpringApplication.run(PayrollGcpApplication.class, args);
     }
-    @Bean
+   /* @Bean
     public EmployeeFunction exampleFunction() {
         return new EmployeeFunction();
     }
@@ -21,9 +21,9 @@ public class PayrollGcpApplication {
     public EmployeeConsumer employeeConsumer() {
         return new EmployeeConsumer();
     }
-
+*/
     @Bean
-    public EmployeeSupplier empSupplier1() {
+    public EmployeeSupplier empSupplier() {
         return new EmployeeSupplier();
     }
 }
